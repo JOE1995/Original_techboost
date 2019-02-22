@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  search_result: one
+  rank: 1
+  shopname: MyString
+
+two:
+  search_result: two
+  rank: 1
+  shopname: MyString

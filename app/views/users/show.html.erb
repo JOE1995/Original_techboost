@@ -1,0 +1,21 @@
+<div class="top-hero-wrapper text-center">
+
+  <div class="container top-hero-container">
+    <p class="text-white"><%= "#{@current_user.name} 様" %></p>
+    <h2 class="text-white"><%= "#{@current_user.shopname}" %></h2>
+    <h2 class="text-white"><%= "【検索場所】#{@current_user.location}" %></h2>
+
+    <% @keywords.each do |keyword|%>
+    <div>
+      <p class="text-white"><%=  keyword.keyword%></p>
+      <% keyword.search_results.each do |search_result|%>
+      <div>
+        <p class="text-white"><%= search_result.search_date %></p>
+        <p class="text-white"><%= search_result.search_ranks.find_by(shopname: @shop.shopname).rank %></p>
+      </div>
+      <%end%>
+    </div>
+    <%end%>
+
+  </div>
+</div>

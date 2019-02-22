@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  keyword: one
+  search_date: 2019-02-21
+
+two:
+  keyword: two
+  search_date: 2019-02-21
